@@ -103,7 +103,7 @@ class VGGTorch(nn.Module):#Se repite la estructura del modelo, por que? cual se 
         return x
 
 class VggNetTorch():
-    def __init__(self, learning_rate, epochs, de    ice):
+    def __init__(self, learning_rate, epochs, device):
         self.model = nn.Sequential(
                     nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1),#Dice lo que entra y lo que sale (increible xd)
                     nn.ReLU(),
