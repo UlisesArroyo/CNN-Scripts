@@ -44,7 +44,7 @@ test_dataloader = DataLoader(test_dataset, batch_size= 16, shuffle=False)
 
 
 
-class VGGTorch(nn.Module):
+class VGGTorch(nn.Module):#Se repite la estructura del modelo, por que? cual se necesitan los dos?
     def __init__(self) -> None:
         super(VGGTorch, self).__init__()
         self.conv1_1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1)
@@ -69,7 +69,7 @@ class VGGTorch(nn.Module):
 
         self.fc1 = nn.Linear(25088, 4096)
         self.fc2 = nn.Linear(4096, 4096)
-        self.fc3 = nn.Linear(4096, 6)
+        self.fc3 = nn.Linear(4096, 6) 
 
     
     def forward(self, x):
@@ -105,19 +105,19 @@ class VGGTorch(nn.Module):
 class VggNetTorch():
     def __init__(self, learning_rate, epochs, device):
         self.model = nn.Sequential(
-                    nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1),
+                    nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1),#Dice lo que entra y lo que sale (increible xd)
                     nn.ReLU(),
                     nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, padding=1),
                     nn.ReLU(),
-                    nn.MaxPool2d(kernel_size=2, stride=2, padding=1),
-                    nn.BatchNorm2d(64), # Primer bloque
+                    nn.MaxPool2d(kernel_size=2, stride=2, padding=1),#No se omiten varias cosas como sucede en keras
+                    nn.BatchNorm2d(64), # Primer bloque, que significa el 64? 
 
                     nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=1),
                     nn.ReLU(),
                     nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1),
                     nn.ReLU(),
                     nn.MaxPool2d(kernel_size=2, stride=2, padding=1),
-                    nn.BatchNorm2d(128), # Segundo Bloque
+                    nn.BatchNorm2d(128), # Segundo Bloque, VoBo, para que sirve BAtchNorm2d?
 
                     nn.Conv2d(in_channels=128, out_channels=256, kernel_size=3, padding=1),
                     nn.ReLU(),
@@ -144,22 +144,24 @@ class VggNetTorch():
                     nn.Conv2d(in_channels=512, out_channels=512, kernel_size=3, padding=1),
                     nn.ReLU(),
                     nn.MaxPool2d(kernel_size=2, stride=2, padding=1),
-                    nn.BatchNorm2d(512), # Cuarto Bloque
-                    nn.Flatten(),
-                    nn.Linear(25088, 4096),
+                    nn.BatchNorm2d(512), # Quinto Bloque
+                    #Esto no tiene que esta en un metodo llamado forward
+                    nn.Flatten(),#Se aplanan los ultimos mapas de caracteristicas
+                    nn.Linear(25088, 4096),#El 25088 de donde lo saco o como esta la onda?, para que sirve Linear?
                     nn.ReLU(),
                     nn.Dropout(0.5),
-                    nn.Linear(4096, 4096),
+                    nn.Linear(4096, 4096),#Entrada salida supongo
                     nn.ReLU(),
                     nn.Dropout(0.5),
                     nn.Linear(4096, 6),
-                    nn.Softmax(dim=1)
+                    nn.Softmax(dim=1)#Una dimension? puedo tener mas? para que son?
         )
-        self.model = VGGTorch()
-        self.criterion = nn.CrossEntropyLoss()
-        self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate)
-        self.epochs = epochs
-        self.device = device
+        self.model = VGGTorch() #Lo mismo que arriba pero mas barato
+        self.criterion = nn.CrossEntropyLoss()#Esto es la funcion de perdida? Investigar
+        self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate) #Que es un optimizador? que otro hay aparte del Adam? Investigar
+        self.epochs = epochs #Se pasa el valor de las epocas
+        self.device = device #Se pasa el dato si se utiliza la gpu o la cpu
+        #La documentación de pytorch no ocupa el device asi
 
     def getAccuracyLossTrain(self):
         return self.trainAccuracy, self.trainLoss
@@ -231,8 +233,9 @@ if __name__ == "__main__":
     epochs = 30
     batch_size = 16
     learning_rate = 0.0001
+    
     #Contiene la estructura de la red vista el libro y cosas extras que en keras no tiene.
-    vgg_torch = VggNetTorch(learning_rate, epochs, device)
+    vgg_torch = VggNetTorch(learning_rate, epochs, device).to(device)
     vgg_torch.train()
     
     vgg_t_t_a, vgg_t_t_l = vgg_torch.getAccuracyLossTrain()
