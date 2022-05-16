@@ -37,7 +37,7 @@ tranform_test = transforms.Compose([transforms.Resize((224,224)),
 train_dataset = torchvision.datasets.ImageFolder(root=train_path, transform= tranform_train)
 test_dataset = torchvision.datasets.ImageFolder(root=test_path, transform= tranform_train)
 
-print(len(train_dataset))
+print("Longitud de train_data"len(train_dataset))
 
 train_dataloader = DataLoader(train_dataset, batch_size= 16, shuffle=True)
 test_dataloader = DataLoader(test_dataset, batch_size= 16, shuffle=False)
@@ -104,6 +104,7 @@ class VGGTorch(nn.Module):#Se repite la estructura del modelo, por que? cual se 
 
 class VggNetTorch():
     def __init__(self, learning_rate, epochs, device):
+        """
         self.model = nn.Sequential(
                     nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1),#Dice lo que entra y lo que sale (increible xd)
                     nn.ReLU(),
@@ -156,9 +157,12 @@ class VggNetTorch():
                     nn.Linear(4096, 6),
                     nn.Softmax(dim=1)#Una dimension? puedo tener mas? para que son?
         )
+        """
         self.model = VGGTorch().to(device) #Lo mismo que arriba pero mas barato
+        
         self.criterion = nn.CrossEntropyLoss()#Esto es la funcion de perdida? Investigar
         self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate) #Que es un optimizador? que otro hay aparte del Adam? Investigar
+        
         self.epochs = epochs #Se pasa el valor de las epocas
         self.device = device #Se pasa el dato si se utiliza la gpu o la cpu
         #La documentación de pytorch no ocupa el device asi
@@ -170,8 +174,8 @@ class VggNetTorch():
         return self.valAccuracy, self.valLoss
 
     def train(self):
-        self.model = self.model.cuda(device=self.device)
-        print(self.device)
+        self.model = self.model.cuda(device=self.device)#Aqui ya doy el ultimo vobo para elegir la gpu?
+        print("Se utilizara: " + self.device)
 
         self.trainAccuracy = []
         self.trainLoss = []
@@ -185,7 +189,7 @@ class VggNetTorch():
             num_correct = 0
             num_samples = 0
             for batch_idx, (data, targets) in enumerate(train_dataloader):
-                data = data.to(device=self.device)
+                data = data.to(device=self.device)#Se carga el data al gpu
                 targets = targets.to(device=self.device)
                 ## Forward Pass
                 self.optimizer.zero_grad()
