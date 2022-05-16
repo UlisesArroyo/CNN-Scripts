@@ -235,7 +235,7 @@ if __name__ == "__main__":
     learning_rate = 0.0001
     
     #Contiene la estructura de la red vista el libro y cosas extras que en keras no tiene.
-    vgg_torch = VggNetTorch(learning_rate, epochs, device).to(device)
+    vgg_torch = VggNetTorch(learning_rate, epochs, device)
     vgg_torch.train()
     
     vgg_t_t_a, vgg_t_t_l = vgg_torch.getAccuracyLossTrain()
