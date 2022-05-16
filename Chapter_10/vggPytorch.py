@@ -103,7 +103,7 @@ class VGGTorch(nn.Module):#Se repite la estructura del modelo, por que? cual se 
         return x
 
 class VggNetTorch():
-    def __init__(self, learning_rate, epochs, device):
+    def __init__(self, learning_rate, epochs, de    ice):
         self.model = nn.Sequential(
                     nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, padding=1),#Dice lo que entra y lo que sale (increible xd)
                     nn.ReLU(),
@@ -156,7 +156,7 @@ class VggNetTorch():
                     nn.Linear(4096, 6),
                     nn.Softmax(dim=1)#Una dimension? puedo tener mas? para que son?
         )
-        self.model = VGGTorch() #Lo mismo que arriba pero mas barato
+        self.model = VGGTorch().to(device) #Lo mismo que arriba pero mas barato
         self.criterion = nn.CrossEntropyLoss()#Esto es la funcion de perdida? Investigar
         self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate) #Que es un optimizador? que otro hay aparte del Adam? Investigar
         self.epochs = epochs #Se pasa el valor de las epocas
