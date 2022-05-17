@@ -255,8 +255,26 @@ if __name__ == "__main__":
     print('Maximo valor de accuracy: {} Ultimo valor de accuracy: {}'.format(max(vgg_t_v_a), vgg_t_v_a[len(vgg_t_v_a) - 1]))
     print('Menor valor de loss: {} Ultimo valor de loss: {}'.format(min(vgg_t_v_l), vgg_t_v_l[len(vgg_t_v_l) - 1]))
 
+    plt.plot ( epochs, vgg_t_t_a, 'g--', label='Training acc Torch'  )
+    plt.plot ( epochs, vgg_t_v_a,  'c', label='Validation acc Torch')
+    plt.title ('Training and validation accuracy Keras - Torch')
+    plt.ylabel('acc')
+    plt.xlabel('epochs')
 
+    plt.legend()
+    plt.figure()
+    plt.show()
 
+    plt.plot ( epochs, vgg_t_t_l, 'g--', label='Training loss Torch'  )
+    plt.plot ( epochs, vgg_t_v_l,  'c', label='Validation loss Torch')
+
+    plt.title ('Training and validation loss Keras - Torch')
+    plt.ylabel('loss')
+    plt.xlabel('epochs')
+
+    plt.legend()
+    plt.figure()
+    plt.show()
 
 
 
