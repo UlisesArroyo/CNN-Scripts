@@ -67,8 +67,8 @@ dataloaders = {
 #En este caso el dataset se pide de torchvision
 model = models.resnet50(pretrained=True).to(device)
     
-for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
-    param.requires_grad = False   
+#for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
+#    param.requires_grad = False   
     
 model.fc = nn.Sequential(#Me parece que esta sustituyendo la ultima capa de la red por esta wea
                 nn.Linear(2048, 128),
