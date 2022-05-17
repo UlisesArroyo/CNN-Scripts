@@ -1,3 +1,4 @@
+#Librerias y asociados 
 from PIL import Image
 import matplotlib.pyplot as plt
 import torch
@@ -11,7 +12,7 @@ import numpy as np
 import time
 import os
 
-
+#GPU o CPU
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 #Hyperparametros
@@ -25,6 +26,7 @@ dataset_path = './datasets/cartoon_face/'
 
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])#Esta normalizacion de que va?
 
+#Normalizacion los datasets
 data_transforms = {
     'train':
     transforms.Compose([
@@ -48,7 +50,7 @@ image_datasets = {
     'test': 
     datasets.ImageFolder(dataset_path + 'test', data_transforms['test'])
 }
-
+#SE cargan los datasets modificados
 dataloaders = {
     'train':
     torch.utils.data.DataLoader(image_datasets['train'],
@@ -62,16 +64,17 @@ dataloaders = {
                                 num_workers=0)  # for Kaggle
 }
 
-#Load de model
+#En este caso el dataset se pide de torchvision
 model = models.resnet50(pretrained=True).to(device)
     
 for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
     param.requires_grad = False   
     
-model.fc = nn.Sequential(
+model.fc = nn.Sequential(#Me parece que esta sustituyendo la ultima capa de la red por esta wea
                 nn.Linear(2048, 128),
                 nn.ReLU(inplace=True),
                 nn.Linear(128, 6)).to(device)
+
 #Hiperparametros
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.fc.parameters())
