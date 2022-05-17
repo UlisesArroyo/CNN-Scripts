@@ -20,11 +20,11 @@ test_path = "./datasets/cartoon_face/test"
 
 #Modificaciones a los datasets
 
-tranform_train = transforms.Compose([transforms.Resize((224,224)), 
-                                    transforms.RandomHorizontalFlip(p=0.1), 
-                                    transforms.ToTensor(), 
-                                    transforms.Normalize(mean=[0.485, 0.456, 0.406], 
-                                    std=[0.229, 0.224, 0.225])])
+tranform_train = transforms.Compose([transforms.Resize((224,224)), #Normaliza el tamaño de las imagenes (eso creo)
+                                    transforms.RandomHorizontalFlip(p=0.1), #la voltean o algo asi, pero sigue siendo una imagen como la conocemos
+                                    transforms.ToTensor(), #Lo volvemos un tensor
+                                    transforms.Normalize(mean=[0.485, 0.456, 0.406], #Esto no sé que hace xD
+                                    std=[0.229, 0.224, 0.225])])#x2
 
 tranform_test = transforms.Compose([transforms.Resize((224,224)), 
                                     transforms.RandomHorizontalFlip(p=0.1),
@@ -33,11 +33,11 @@ tranform_test = transforms.Compose([transforms.Resize((224,224)),
                                     std=[0.229, 0.224, 0.225])])
 
 #preparing the train, validation and test dataset
-
+#Inicializamos nuestros datasets como dios manda
 train_dataset = torchvision.datasets.ImageFolder(root=train_path, transform= tranform_train)
 test_dataset = torchvision.datasets.ImageFolder(root=test_path, transform= tranform_train)
-
-print("Longitud de train_data"len(train_dataset))
+#La longitud es la cantidad de imagenes
+print("Longitud de train_data"len(train_dataset)) #Este ejemplo son 1800
 
 train_dataloader = DataLoader(train_dataset, batch_size= 16, shuffle=True)
 test_dataloader = DataLoader(test_dataset, batch_size= 16, shuffle=False)
@@ -67,7 +67,7 @@ class VGGTorch(nn.Module):#Se repite la estructura del modelo, por que? cual se 
 
         self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
 
-        self.fc1 = nn.Linear(25088, 4096)
+        self.fc1 = nn.Linear(25088, 4096) #El 25088 puede ser el resultado de 512 * 7 * 7, se redujo las dimensiones en las convs
         self.fc2 = nn.Linear(4096, 4096)
         self.fc3 = nn.Linear(4096, 6) 
 
