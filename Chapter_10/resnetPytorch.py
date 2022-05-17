@@ -129,7 +129,7 @@ def train_model(model, criterion, optimizer, num_epochs=3):
 
     return model
 
-model_trained = train_model(model, criterion, optimizer, num_epochs=30)
+model_trained = train_model(model, criterion, optimizer, num_epochs=3)
 
 def getAccuracyLossTrain():
     return train_accuracy, train_loss
@@ -139,7 +139,7 @@ def getAccuracyLossVal():
 
 
 if __name__ == "__main__":
-    epochs = 30
+    epochs = 3
     batch_size = 64
 
     epochs = range(1, epochs + 1, 1)
@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
 
 
-
+"""
     plt.plot ( epochs, vgg_t_t_l, 'g--', label='Training loss Torch'  )
     plt.plot ( epochs, vgg_t_v_l,  'c', label='Validation loss Torch')
 
@@ -170,3 +170,4 @@ if __name__ == "__main__":
     plt.legend()
     plt.figure()
     plt.show()
+"""
