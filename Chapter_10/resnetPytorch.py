@@ -19,7 +19,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 classes = 6
 learning_rate = 0.001
 batch_size = 64
-num_epoch = 5
+num_epoch = 3
 
 
 dataset_path = './datasets/cartoon_face/'
