@@ -52,7 +52,7 @@ image_datasets = {
 dataloaders = {
     'train':
     torch.utils.data.DataLoader(image_datasets['train'],
-                                batch_size=32,
+                                batch_size=32,#Cantidad de imagenes en cada lote
                                 shuffle=True,
                                 num_workers=0),  # for Kaggle
     'test':
@@ -65,14 +65,14 @@ dataloaders = {
 #Load de model
 model = models.resnet50(pretrained=True).to(device)
     
-for param in model.parameters():
+for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
     param.requires_grad = False   
     
 model.fc = nn.Sequential(
                 nn.Linear(2048, 128),
                 nn.ReLU(inplace=True),
                 nn.Linear(128, 6)).to(device)
-
+#Hiperparametros
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.fc.parameters())
 
@@ -157,8 +157,6 @@ if __name__ == "__main__":
 
 
 
-    plt.plot ( epochs, vgg_k_t_l, 'r--', label='Training loss Keras'  )
-    plt.plot ( epochs, vgg_k_v_l,  'b', label='Validation loss Keras')
     plt.plot ( epochs, vgg_t_t_l, 'g--', label='Training loss Torch'  )
     plt.plot ( epochs, vgg_t_v_l,  'c', label='Validation loss Torch')
 
