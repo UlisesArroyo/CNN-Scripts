@@ -19,7 +19,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 classes = 6
 learning_rate = 0.001
 batch_size = 64
-num_epoch = 3
+num_epoch = 5
 
 
 dataset_path = './datasets/cartoon_face/'
@@ -67,8 +67,8 @@ dataloaders = {
 #En este caso el dataset se pide de torchvision
 model = models.resnet50(pretrained=True).to(device)
     
-#for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
-#    param.requires_grad = False   
+for param in model.parameters():#Recorre los parametros del modelo y desabilita para que no aprendan, aqui esta la clave
+    param.requires_grad = True 
     
 model.fc = nn.Sequential(#Me parece que esta sustituyendo la ultima capa de la red por esta wea
                 nn.Linear(2048, 128),
@@ -129,7 +129,7 @@ def train_model(model, criterion, optimizer, num_epochs=3):
 
     return model
 
-model_trained = train_model(model, criterion, optimizer, num_epochs=3)
+model_trained = train_model(model, criterion, optimizer, num_epochs=30)
 
 def getAccuracyLossTrain():
     return train_accuracy, train_loss
@@ -139,7 +139,7 @@ def getAccuracyLossVal():
 
 
 if __name__ == "__main__":
-    epochs = 3
+    epochs = 30
     batch_size = 64
 
     epochs = range(1, epochs + 1, 1)
