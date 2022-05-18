@@ -20,7 +20,8 @@ batch_size = 64
 num_epoch = 5
 
 
-dataset_path = '/home/bringascastle/Escritorio/datasets/cartoon_face/'
+dataset_path = './datasets/cartoon_face/'
+
 
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 
