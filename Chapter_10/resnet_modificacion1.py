@@ -154,7 +154,7 @@ def getAccuracyLossVal():
     return val_accuracy, val_loss
 
 
-epochs = range(1, epochs + 1, 1)
+epochs = range(1, epoch + 1, 1)
 
 
 vgg_t_t_a, vgg_t_t_l = getAccuracyLossTrain()
