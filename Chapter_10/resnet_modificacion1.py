@@ -87,6 +87,9 @@ val_accuracy = []
 val_loss = []
 
 def train_model(model, criterion, optimizer, num_epochs):
+    file = open("./" + "modificaciones/" + name + ".txt", "a+")
+        file.write("-"*10+"Televisa" + "-"*10+ "\n")
+        file.close()
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
         file.write("Epoch " + str(epoch+1) +"/" + str(num_epoch) + "\n")
@@ -136,7 +139,7 @@ def train_model(model, criterion, optimizer, num_epochs):
                 val_accuracy.append(epoch_acc)
                 val_loss.append(epoch_loss)
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
-        file.write("\nTraining Time (in minutes) =" + str((time2-time1)/60) + "\n")
+        file.write("\n"+ phase +"ing Time (in minutes) =" + str((time2-time1)/60) + "\n")
         file.close()
         print("\nTraining Time (in minutes) =",(time2-time1)/60)
 
