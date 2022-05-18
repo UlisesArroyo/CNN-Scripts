@@ -137,7 +137,7 @@ def train_model(model, criterion, optimizer, num_epochs):
                 val_loss.append(epoch_loss)
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
         file.write("\nTraining Time (in minutes) =",(time2-time1)/60 + "\n")
-        file.close
+        file.close()
         print("\nTraining Time (in minutes) =",(time2-time1)/60)
 
     return model
