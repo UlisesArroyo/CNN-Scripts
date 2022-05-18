@@ -90,7 +90,7 @@ def train_model(model, criterion, optimizer, num_epochs):
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
         file.write("Epoch " + str(epoch+1) +"/" + num_epoch + "\n")
-	    file.close()
+        file.close()
         print('Epoch {}/{}'.format(epoch+1, num_epochs))
         print('-' * 10)
         time0 = time()    
@@ -125,7 +125,7 @@ def train_model(model, criterion, optimizer, num_epochs):
             file = open("./" + "modificaciones/" + name + ".txt", "a+")
             file.write('{} loss: {:.4f}, acc: {:.4f}'.format(phase, epoch_loss, epoch_acc)+"\n")
             file.write("time: {:.4f} seg".format(time()-time0)+"\n")
-	        file.close()
+            file.close()
             print('{} loss: {:.4f}, acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
             print("time: {:.4f} seg".format(time()-time0))
             time2 = time()   
