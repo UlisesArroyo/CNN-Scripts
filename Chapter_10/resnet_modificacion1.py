@@ -19,7 +19,8 @@ learning_rate = 0.001
 batch_size = 64
 num_epoch = 5
 
-name = "modficacion_1"
+name = "modficacion_1: Epocas "
+title = "Epocas:5"
 os.makedirs('./'+"modificaciones", exist_ok=True)
 
 
@@ -87,8 +88,8 @@ val_accuracy = []
 val_loss = []
 
 def train_model(model, criterion, optimizer, num_epochs):
-    file = open("./" + "modificaciones/" + name + ".txt", "w")
-    file.write("-"*10+"Televisa" + "-"*10+ "\n")
+    file = open("./" + "modificaciones/" + name + ".txt", "a+")
+    file.write("-"*10+ name + title + "-"*10+ "\n")
     file.close()
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
@@ -154,7 +155,7 @@ def getAccuracyLossVal():
     return val_accuracy, val_loss
 
 
-epochs = range(1, epoch + 1, 1)
+epochs = range(1, num_epoch + 1, 1)
 
 
 vgg_t_t_a, vgg_t_t_l = getAccuracyLossTrain()
