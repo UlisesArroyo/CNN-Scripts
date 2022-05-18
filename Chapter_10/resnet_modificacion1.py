@@ -89,7 +89,7 @@ val_loss = []
 def train_model(model, criterion, optimizer, num_epochs):
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
-        file.write("Epoch " + str(epoch+1) +"/" + num_epoch + "\n")
+        file.write("Epoch " + str(epoch+1) +"/" + str(num_epoch) + "\n")
         file.close()
         print('Epoch {}/{}'.format(epoch+1, num_epochs))
         print('-' * 10)
