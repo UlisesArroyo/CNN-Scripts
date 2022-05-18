@@ -88,8 +88,8 @@ val_loss = []
 
 def train_model(model, criterion, optimizer, num_epochs):
     file = open("./" + "modificaciones/" + name + ".txt", "a+")
-        file.write("-"*10+"Televisa" + "-"*10+ "\n")
-        file.close()
+    file.write("-"*10+"Televisa" + "-"*10+ "\n")
+    file.close()
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
         file.write("Epoch " + str(epoch+1) +"/" + str(num_epoch) + "\n")
