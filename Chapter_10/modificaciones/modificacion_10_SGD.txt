@@ -1,0 +1,3 @@
+
+----------modificacion_10_SGD Learning Rate: 0.1----------
+Epoch 1/10

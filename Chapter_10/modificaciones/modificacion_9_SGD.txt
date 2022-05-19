@@ -1,0 +1,293 @@
+
+----------modificacion_9_SGD Learning Rate: 0.1----------
+Epoch 1/10
+train loss: 1.6923, acc: 0.3372
+time: 13.5704 seg
+test loss: 1.8852, acc: 0.1667
+time: 20.2611 seg
+
+testing Time (in minutes) =0.33768925269444783
+Epoch 2/10
+train loss: 1.5060, acc: 0.3906
+time: 13.3530 seg
+test loss: 1.3520, acc: 0.3522
+time: 20.0497 seg
+
+testing Time (in minutes) =0.6718533237775167
+Epoch 3/10
+train loss: 1.4524, acc: 0.4328
+time: 13.4820 seg
+test loss: 0.7953, acc: 0.6456
+time: 20.1875 seg
+
+testing Time (in minutes) =1.0083156863848368
+Epoch 4/10
+train loss: 1.3022, acc: 0.4761
+time: 13.3588 seg
+test loss: 1.3332, acc: 0.4722
+time: 20.7258 seg
+
+testing Time (in minutes) =1.3537492076555888
+Epoch 5/10
+train loss: 1.3495, acc: 0.4283
+time: 14.8370 seg
+test loss: 0.5931, acc: 0.7678
+time: 21.5163 seg
+
+testing Time (in minutes) =1.7123565316200255
+Epoch 6/10
+train loss: 0.7883, acc: 0.6894
+time: 13.3843 seg
+test loss: 2.3478, acc: 0.4989
+time: 20.1282 seg
+
+testing Time (in minutes) =2.047830851872762
+Epoch 7/10
+train loss: 0.6307, acc: 0.7567
+time: 13.3841 seg
+test loss: 0.4144, acc: 0.8056
+time: 20.0721 seg
+
+testing Time (in minutes) =2.3823707858721415
+Epoch 8/10
+train loss: 0.6402, acc: 0.7706
+time: 13.7509 seg
+test loss: 0.6797, acc: 0.6922
+time: 20.4312 seg
+
+testing Time (in minutes) =2.7228930989901223
+Epoch 9/10
+train loss: 0.3843, acc: 0.8589
+time: 13.4373 seg
+test loss: 1.5898, acc: 0.6433
+time: 20.0871 seg
+
+testing Time (in minutes) =3.057681167125702
+Epoch 10/10
+train loss: 0.3811, acc: 0.8689
+time: 13.4829 seg
+test loss: 0.5194, acc: 0.8222
+time: 20.1858 seg
+
+testing Time (in minutes) =3.394115686416626
+Torch train
+Maximo valor de accuracy: 0.8688888888888889 Ultimo valor de accuracy: 0.8688888888888889Menor valor de loss: 0.10006975382566452 Ultimo valor de loss: 0.10006975382566452Torch ValMaximo valor de accuracy: 0.8222222222222222 Ultimo valor de accuracy: 0.8222222222222222Menor valor de loss: 0.4143541616223067 Ultimo valor de loss: 0.5193746592311396
+----------modificacion_9_SGD Learning Rate: 0.01----------
+Epoch 1/10
+train loss: 1.4011, acc: 0.6156
+time: 15.1913 seg
+test loss: 0.9396, acc: 0.8211
+time: 21.8941 seg
+
+testing Time (in minutes) =0.36490625540415444
+Epoch 2/10
+train loss: 0.7263, acc: 0.8550
+time: 13.4827 seg
+test loss: 0.5152, acc: 0.8500
+time: 20.2510 seg
+
+testing Time (in minutes) =0.702425746122996
+Epoch 3/10
+train loss: 0.4589, acc: 0.8989
+time: 13.4089 seg
+test loss: 0.3455, acc: 0.9256
+time: 20.1234 seg
+
+testing Time (in minutes) =1.0378268559773762
+Epoch 4/10
+train loss: 0.3319, acc: 0.9206
+time: 13.4721 seg
+test loss: 0.2595, acc: 0.9333
+time: 20.1557 seg
+
+testing Time (in minutes) =1.373764419555664
+Epoch 5/10
+train loss: 0.2828, acc: 0.9156
+time: 13.5859 seg
+test loss: 0.2190, acc: 0.9489
+time: 20.3389 seg
+
+testing Time (in minutes) =1.7127496163050333
+Epoch 6/10
+train loss: 0.2287, acc: 0.9383
+time: 13.9852 seg
+test loss: 0.1949, acc: 0.9433
+time: 21.1836 seg
+
+testing Time (in minutes) =2.0658133467038473
+Epoch 7/10
+train loss: 0.2058, acc: 0.9422
+time: 13.6862 seg
+test loss: 0.1702, acc: 0.9478
+time: 20.5595 seg
+
+testing Time (in minutes) =2.40847468773524
+Epoch 8/10
+train loss: 0.1870, acc: 0.9500
+time: 13.4060 seg
+test loss: 0.1602, acc: 0.9533
+time: 20.0374 seg
+
+testing Time (in minutes) =2.7424339652061462
+Epoch 9/10
+train loss: 0.1926, acc: 0.9483
+time: 13.4428 seg
+test loss: 0.1741, acc: 0.9300
+time: 20.0434 seg
+
+testing Time (in minutes) =3.0764981547991437
+Epoch 10/10
+train loss: 0.1686, acc: 0.9483
+time: 13.3256 seg
+test loss: 0.1814, acc: 0.9389
+time: 19.9535 seg
+
+testing Time (in minutes) =3.409058912595113
+Torch train
+Maximo valor de accuracy: 0.95 Ultimo valor de accuracy: 0.9483333333333334Menor valor de loss: 0.042417652904987335 Ultimo valor de loss: 0.38686758279800415Torch ValMaximo valor de accuracy: 0.9533333333333334 Ultimo valor de accuracy: 0.9388888888888889Menor valor de loss: 0.16024439185029932 Ultimo valor de loss: 0.18140119009547764
+----------modificacion_9_SGD Learning Rate: 0.001----------
+Epoch 1/10
+train loss: 1.7549, acc: 0.3133
+time: 14.6335 seg
+test loss: 1.7093, acc: 0.4433
+time: 21.3302 seg
+
+testing Time (in minutes) =0.3555065910021464
+Epoch 2/10
+train loss: 1.6738, acc: 0.5511
+time: 13.5956 seg
+test loss: 1.6210, acc: 0.5800
+time: 20.3474 seg
+
+testing Time (in minutes) =0.6946331659952799
+Epoch 3/10
+train loss: 1.5855, acc: 0.6561
+time: 13.4341 seg
+test loss: 1.5226, acc: 0.7267
+time: 20.1345 seg
+
+testing Time (in minutes) =1.0302118380864462
+Epoch 4/10
+train loss: 1.4889, acc: 0.7400
+time: 13.4522 seg
+test loss: 1.4191, acc: 0.8122
+time: 20.1451 seg
+
+testing Time (in minutes) =1.365966796875
+Epoch 5/10
+train loss: 1.3853, acc: 0.8061
+time: 13.3759 seg
+test loss: 1.3127, acc: 0.8122
+time: 20.1093 seg
+
+testing Time (in minutes) =1.7011262019475302
+Epoch 6/10
+train loss: 1.2852, acc: 0.8189
+time: 13.4786 seg
+test loss: 1.2083, acc: 0.8444
+time: 20.2151 seg
+
+testing Time (in minutes) =2.0380489865938825
+Epoch 7/10
+train loss: 1.1852, acc: 0.8378
+time: 13.4898 seg
+test loss: 1.1119, acc: 0.8933
+time: 20.2442 seg
+
+testing Time (in minutes) =2.3754554947217303
+Epoch 8/10
+train loss: 1.0987, acc: 0.8694
+time: 13.4733 seg
+test loss: 1.0100, acc: 0.8956
+time: 20.2249 seg
+
+testing Time (in minutes) =2.712539764245351
+Epoch 9/10
+train loss: 1.0194, acc: 0.8700
+time: 13.6291 seg
+test loss: 0.9369, acc: 0.9011
+time: 20.3353 seg
+
+testing Time (in minutes) =3.051466166973114
+Epoch 10/10
+train loss: 0.9432, acc: 0.8800
+time: 14.1748 seg
+test loss: 0.8575, acc: 0.8956
+time: 20.9600 seg
+
+testing Time (in minutes) =3.4008036732673643
+Torch train
+Maximo valor de accuracy: 0.88 Ultimo valor de accuracy: 0.88Menor valor de loss: 0.8335193991661072 Ultimo valor de loss: 0.8335193991661072Torch ValMaximo valor de accuracy: 0.9011111111111111 Ultimo valor de accuracy: 0.8955555555555555Menor valor de loss: 0.8575306314892239 Ultimo valor de loss: 0.8575306314892239
+----------modificacion_9_SGD Learning Rate: 0.0001----------
+Epoch 1/10
+train loss: 1.8007, acc: 0.1656
+time: 13.4417 seg
+test loss: 1.7936, acc: 0.1633
+time: 20.1405 seg
+
+testing Time (in minutes) =0.33567898273468016
+Epoch 2/10
+train loss: 1.7925, acc: 0.1733
+time: 13.4280 seg
+test loss: 1.7855, acc: 0.1744
+time: 20.0445 seg
+
+testing Time (in minutes) =0.6697584788004557
+Epoch 3/10
+train loss: 1.7839, acc: 0.1789
+time: 13.4066 seg
+test loss: 1.7775, acc: 0.1867
+time: 20.0547 seg
+
+testing Time (in minutes) =1.004007303714752
+Epoch 4/10
+train loss: 1.7763, acc: 0.1906
+time: 13.3751 seg
+test loss: 1.7708, acc: 0.2044
+time: 20.0164 seg
+
+testing Time (in minutes) =1.3376172105471293
+Epoch 5/10
+train loss: 1.7683, acc: 0.2239
+time: 13.5280 seg
+test loss: 1.7630, acc: 0.2444
+time: 20.2381 seg
+
+testing Time (in minutes) =1.6749231616655986
+Epoch 6/10
+train loss: 1.7618, acc: 0.2689
+time: 13.4327 seg
+test loss: 1.7557, acc: 0.2867
+time: 20.1841 seg
+
+testing Time (in minutes) =2.011327346165975
+Epoch 7/10
+train loss: 1.7548, acc: 0.3006
+time: 13.3777 seg
+test loss: 1.7464, acc: 0.3522
+time: 20.1565 seg
+
+testing Time (in minutes) =2.3472735047340394
+Epoch 8/10
+train loss: 1.7464, acc: 0.3478
+time: 13.4218 seg
+test loss: 1.7397, acc: 0.4011
+time: 20.1229 seg
+
+testing Time (in minutes) =2.6826580723126727
+Epoch 9/10
+train loss: 1.7391, acc: 0.4111
+time: 13.3366 seg
+test loss: 1.7324, acc: 0.4356
+time: 20.0018 seg
+
+testing Time (in minutes) =3.0160239696502686
+Epoch 10/10
+train loss: 1.7322, acc: 0.4450
+time: 13.4414 seg
+test loss: 1.7246, acc: 0.4689
+time: 20.0845 seg
+
+testing Time (in minutes) =3.3507686694463095
+Torch train
+Maximo valor de accuracy: 0.445 Ultimo valor de accuracy: 0.445Menor valor de loss: 1.7005666494369507 Ultimo valor de loss: 1.7185474634170532Torch ValMaximo valor de accuracy: 0.4688888888888889 Ultimo valor de accuracy: 0.4688888888888889Menor valor de loss: 1.724631355603536 Ultimo valor de loss: 1.724631355603536
