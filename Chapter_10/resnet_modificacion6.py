@@ -15,11 +15,12 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 #Hyperparametros
 classes = 6
-learning_rate = 0.1
+learning_rate = 0.0001
+
 batch_size = 16
 num_epoch = 10
 
-name = "modificacion_5 "
+name = "modificacion_6 "
 title = " Learning Rate: " + str(learning_rate) +""
 os.makedirs('./'+"modificaciones", exist_ok=True)
 
@@ -70,7 +71,7 @@ model = models.resnet50(pretrained=True).to(device)
 #Se desabilita el aprendizaje en todas las capas
 #print("model: ", model)
 #print("model.(layer1)", model.layer1)
-for param in model.parameters:
+for param in model.parameters():
     param.requires_grad = True   
     
 model.fc = nn.Sequential(

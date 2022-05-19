@@ -1,0 +1,293 @@
+
+----------modificacion_6  Learning Rate: 0.1----------
+Epoch 1/10
+train loss: 8.5755, acc: 0.2100
+time: 26.5693 seg
+test loss: 1.7973, acc: 0.1667
+time: 33.2715 seg
+
+testing Time (in minutes) =0.5545290390650431
+Epoch 2/10
+train loss: 2.0938, acc: 0.1678
+time: 24.9521 seg
+test loss: 1.8033, acc: 0.1667
+time: 31.5568 seg
+
+testing Time (in minutes) =1.080480126539866
+Epoch 3/10
+train loss: 1.8027, acc: 0.1700
+time: 25.1025 seg
+test loss: 1.7974, acc: 0.1667
+time: 31.7584 seg
+
+testing Time (in minutes) =1.6097915728886922
+Epoch 4/10
+train loss: 1.8045, acc: 0.1433
+time: 25.1518 seg
+test loss: 1.8060, acc: 0.1667
+time: 31.8652 seg
+
+testing Time (in minutes) =2.1408812403678894
+Epoch 5/10
+train loss: 1.8002, acc: 0.1844
+time: 25.1298 seg
+test loss: 1.8066, acc: 0.1667
+time: 31.7607 seg
+
+testing Time (in minutes) =2.670229383309682
+Epoch 6/10
+train loss: 1.8051, acc: 0.1578
+time: 25.1730 seg
+test loss: 1.7986, acc: 0.1667
+time: 31.7886 seg
+
+testing Time (in minutes) =3.2000428318977354
+Epoch 7/10
+train loss: 1.8111, acc: 0.1539
+time: 25.3959 seg
+test loss: 1.7990, acc: 0.1667
+time: 32.0605 seg
+
+testing Time (in minutes) =3.7343886534372968
+Epoch 8/10
+train loss: 1.8030, acc: 0.1644
+time: 25.2299 seg
+test loss: 1.8061, acc: 0.1667
+time: 31.8496 seg
+
+testing Time (in minutes) =4.2652203639348345
+Epoch 9/10
+train loss: 1.8065, acc: 0.1522
+time: 25.3195 seg
+test loss: 1.8070, acc: 0.1667
+time: 31.9572 seg
+
+testing Time (in minutes) =4.797843817869822
+Epoch 10/10
+train loss: 1.8061, acc: 0.1650
+time: 25.3079 seg
+test loss: 1.7984, acc: 0.1667
+time: 31.9849 seg
+
+testing Time (in minutes) =5.330928877989451
+Torch train
+Maximo valor de accuracy: 0.21 Ultimo valor de accuracy: 0.165Menor valor de loss: 1.723645567893982 Ultimo valor de loss: 1.7814640998840332Torch ValMaximo valor de accuracy: 0.16666666666666666 Ultimo valor de accuracy: 0.16666666666666666Menor valor de loss: 1.7973105314042832 Ultimo valor de loss: 1.7984109761979845
+----------modificacion_6  Learning Rate: 0.01----------
+Epoch 1/10
+train loss: 1.0848, acc: 0.6733
+time: 25.0944 seg
+test loss: 0.1985, acc: 0.9322
+time: 31.7053 seg
+
+testing Time (in minutes) =0.5284253001213074
+Epoch 2/10
+train loss: 0.3135, acc: 0.8878
+time: 25.2212 seg
+test loss: 0.5802, acc: 0.7944
+time: 31.8378 seg
+
+testing Time (in minutes) =1.0590591073036193
+Epoch 3/10
+train loss: 0.3971, acc: 0.8783
+time: 25.4684 seg
+test loss: 0.1829, acc: 0.9400
+time: 32.1314 seg
+
+testing Time (in minutes) =1.5945860783259074
+Epoch 4/10
+train loss: 0.2288, acc: 0.9161
+time: 25.4635 seg
+test loss: 0.3253, acc: 0.8711
+time: 32.0853 seg
+
+testing Time (in minutes) =2.1293450514475505
+Epoch 5/10
+train loss: 0.2804, acc: 0.9083
+time: 25.5368 seg
+test loss: 0.1678, acc: 0.9489
+time: 32.1706 seg
+
+testing Time (in minutes) =2.6655237674713135
+Epoch 6/10
+train loss: 0.2440, acc: 0.9150
+time: 25.6958 seg
+test loss: 0.4277, acc: 0.8811
+time: 32.4151 seg
+
+testing Time (in minutes) =3.205778261025747
+Epoch 7/10
+train loss: 0.3086, acc: 0.9078
+time: 25.6194 seg
+test loss: 0.2212, acc: 0.9333
+time: 32.3630 seg
+
+testing Time (in minutes) =3.7451657255490622
+Epoch 8/10
+train loss: 0.2720, acc: 0.9144
+time: 25.6370 seg
+test loss: 0.4062, acc: 0.8756
+time: 32.2984 seg
+
+testing Time (in minutes) =4.283476265271505
+Epoch 9/10
+train loss: 0.2509, acc: 0.9278
+time: 25.6556 seg
+test loss: 0.1646, acc: 0.9511
+time: 32.4007 seg
+
+testing Time (in minutes) =4.823490401109059
+Epoch 10/10
+train loss: 0.2093, acc: 0.9272
+time: 25.5963 seg
+test loss: 0.3218, acc: 0.8744
+time: 32.3013 seg
+
+testing Time (in minutes) =5.361848064263662
+Torch train
+Maximo valor de accuracy: 0.9277777777777778 Ultimo valor de accuracy: 0.9272222222222222Menor valor de loss: 0.13970723748207092 Ultimo valor de loss: 0.6521816253662109Torch ValMaximo valor de accuracy: 0.9511111111111111 Ultimo valor de accuracy: 0.8744444444444445Menor valor de loss: 0.16458741657788373 Ultimo valor de loss: 0.3218047366529289
+----------modificacion_6  Learning Rate: 0.001----------
+Epoch 1/10
+train loss: 0.7263, acc: 0.7661
+time: 25.3950 seg
+test loss: 0.3358, acc: 0.8900
+time: 32.1242 seg
+
+testing Time (in minutes) =0.5354078412055969
+Epoch 2/10
+train loss: 0.2921, acc: 0.9072
+time: 25.5532 seg
+test loss: 0.1713, acc: 0.9433
+time: 32.1709 seg
+
+testing Time (in minutes) =1.0715929905573527
+Epoch 3/10
+train loss: 0.2054, acc: 0.9328
+time: 25.7422 seg
+test loss: 0.1893, acc: 0.9356
+time: 32.4304 seg
+
+testing Time (in minutes) =1.612102782726288
+Epoch 4/10
+train loss: 0.2190, acc: 0.9217
+time: 25.7363 seg
+test loss: 0.2047, acc: 0.9278
+time: 32.4192 seg
+
+testing Time (in minutes) =2.152425992488861
+Epoch 5/10
+train loss: 0.1823, acc: 0.9283
+time: 25.9651 seg
+test loss: 0.1369, acc: 0.9522
+time: 32.6564 seg
+
+testing Time (in minutes) =2.6967089931170145
+Epoch 6/10
+train loss: 0.1337, acc: 0.9561
+time: 25.6882 seg
+test loss: 0.1622, acc: 0.9389
+time: 32.4849 seg
+
+testing Time (in minutes) =3.2381279428799945
+Epoch 7/10
+train loss: 0.1328, acc: 0.9528
+time: 25.6863 seg
+test loss: 0.1593, acc: 0.9389
+time: 32.3958 seg
+
+testing Time (in minutes) =3.7780619661013284
+Epoch 8/10
+train loss: 0.1436, acc: 0.9494
+time: 25.6685 seg
+test loss: 0.1438, acc: 0.9456
+time: 32.3588 seg
+
+testing Time (in minutes) =4.317378795146942
+Epoch 9/10
+train loss: 0.1283, acc: 0.9567
+time: 25.7116 seg
+test loss: 0.1346, acc: 0.9533
+time: 32.4591 seg
+
+testing Time (in minutes) =4.858366143703461
+Epoch 10/10
+train loss: 0.1279, acc: 0.9533
+time: 25.9902 seg
+test loss: 0.1202, acc: 0.9500
+time: 32.7997 seg
+
+testing Time (in minutes) =5.40503203868866
+Torch train
+Maximo valor de accuracy: 0.9566666666666667 Ultimo valor de accuracy: 0.9533333333333334Menor valor de loss: 0.0283950325101614 Ultimo valor de loss: 0.04287097603082657Torch ValMaximo valor de accuracy: 0.9533333333333334 Ultimo valor de accuracy: 0.95Menor valor de loss: 0.12020313526865922 Ultimo valor de loss: 0.12020313526865922
+----------modificacion_6  Learning Rate: 0.0001----------
+Epoch 1/10
+train loss: 1.3548, acc: 0.6539
+time: 26.1104 seg
+test loss: 0.9036, acc: 0.9100
+time: 32.7387 seg
+
+testing Time (in minutes) =0.5456485827763875
+Epoch 2/10
+train loss: 0.7528, acc: 0.8939
+time: 25.9014 seg
+test loss: 0.5359, acc: 0.9333
+time: 32.5418 seg
+
+testing Time (in minutes) =1.0880216360092163
+Epoch 3/10
+train loss: 0.5049, acc: 0.9144
+time: 25.6917 seg
+test loss: 0.3851, acc: 0.9389
+time: 32.4721 seg
+
+testing Time (in minutes) =1.629227062066396
+Epoch 4/10
+train loss: 0.3879, acc: 0.9278
+time: 25.7674 seg
+test loss: 0.3071, acc: 0.9456
+time: 32.4374 seg
+
+testing Time (in minutes) =2.169855825106303
+Epoch 5/10
+train loss: 0.3197, acc: 0.9378
+time: 25.7281 seg
+test loss: 0.2665, acc: 0.9422
+time: 32.4458 seg
+
+testing Time (in minutes) =2.7106220444043476
+Epoch 6/10
+train loss: 0.2737, acc: 0.9433
+time: 26.3744 seg
+test loss: 0.2417, acc: 0.9356
+time: 33.1761 seg
+
+testing Time (in minutes) =3.2635604540506997
+Epoch 7/10
+train loss: 0.2362, acc: 0.9444
+time: 25.9799 seg
+test loss: 0.2144, acc: 0.9456
+time: 32.6927 seg
+
+testing Time (in minutes) =3.8084461132685345
+Epoch 8/10
+train loss: 0.2265, acc: 0.9450
+time: 25.6815 seg
+test loss: 0.1978, acc: 0.9533
+time: 32.3986 seg
+
+testing Time (in minutes) =4.3484265327453615
+Epoch 9/10
+train loss: 0.1977, acc: 0.9539
+time: 25.6902 seg
+test loss: 0.1873, acc: 0.9433
+time: 32.3338 seg
+
+testing Time (in minutes) =4.887325743834178
+Epoch 10/10
+train loss: 0.1901, acc: 0.9489
+time: 26.0184 seg
+test loss: 0.1759, acc: 0.9500
+time: 32.6767 seg
+
+testing Time (in minutes) =5.431941390037537
+Torch train
+Maximo valor de accuracy: 0.9538888888888889 Ultimo valor de accuracy: 0.9488888888888889Menor valor de loss: 0.06603386253118515 Ultimo valor de loss: 0.44830843806266785Torch ValMaximo valor de accuracy: 0.9533333333333334 Ultimo valor de accuracy: 0.95Menor valor de loss: 0.17590756655567222 Ultimo valor de loss: 0.17590756655567222

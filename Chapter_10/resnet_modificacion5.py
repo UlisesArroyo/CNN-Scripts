@@ -70,7 +70,7 @@ model = models.resnet50(pretrained=True).to(device)
 #Se desabilita el aprendizaje en todas las capas
 #print("model: ", model)
 #print("model.(layer1)", model.layer1)
-for param in model.parameters:
+for param in model.parameters():
     param.requires_grad = False   
     
 model.fc = nn.Sequential(
