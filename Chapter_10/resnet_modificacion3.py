@@ -16,10 +16,10 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #Hyperparametros
 classes = 6
 learning_rate = 0.001
-batch_size = 64
+batch_size = 16
 num_epoch = 30
 
-name = "modficacion_1_transfer_learning"
+name = "modficacion_3_sin_entrenar"
 title = "Epocas:" + str(num_epoch)
 os.makedirs('./'+"modificaciones", exist_ok=True)
 
@@ -55,21 +55,21 @@ image_datasets = {
 dataloaders = {
     'train':
     torch.utils.data.DataLoader(image_datasets['train'],
-                                batch_size=32,
+                                batch_size=16,
                                 shuffle=True,
                                 num_workers=0),  # for Kaggle
     'test':
     torch.utils.data.DataLoader(image_datasets['test'],
-                                batch_size=32,
+                                batch_size=16,
                                 shuffle=False,
                                 num_workers=0)  # for Kaggle
 }
 
 #Se carga el modelo
-model = models.resnet50(pretrained=True).to(device)
+model = models.resnet50(pretrained=False).to(device)
 #Se desabilita el aprendizaje en todas las capas
 for param in model.parameters():
-    param.requires_grad = False   
+    param.requires_grad = True   
     
 model.fc = nn.Sequential(
                 nn.Linear(2048, 128),

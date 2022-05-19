@@ -1,0 +1,216 @@
+----------modficacion_1_transfer_learningEpocas:30----------
+Epoch 1/30
+train loss: 0.8511, acc: 0.7400
+time: 13.2541 seg
+test loss: 0.3566, acc: 0.9044
+time: 19.7718 seg
+
+testing Time (in minutes) =0.329535710811615
+Epoch 2/30
+train loss: 0.2677, acc: 0.9283
+time: 13.2122 seg
+test loss: 0.2192, acc: 0.9378
+time: 19.7308 seg
+
+testing Time (in minutes) =0.6583849668502808
+Epoch 3/30
+train loss: 0.2016, acc: 0.9333
+time: 13.1325 seg
+test loss: 0.1820, acc: 0.9411
+time: 19.5471 seg
+
+testing Time (in minutes) =0.9841747283935547
+Epoch 4/30
+train loss: 0.1618, acc: 0.9561
+time: 13.2294 seg
+test loss: 0.2126, acc: 0.9200
+time: 19.9877 seg
+
+testing Time (in minutes) =1.317307472229004
+Epoch 5/30
+train loss: 0.1323, acc: 0.9583
+time: 13.2040 seg
+test loss: 0.1631, acc: 0.9467
+time: 19.7054 seg
+
+testing Time (in minutes) =1.6457366387049357
+Epoch 6/30
+train loss: 0.1223, acc: 0.9656
+time: 13.1952 seg
+test loss: 0.1295, acc: 0.9556
+time: 19.7486 seg
+
+testing Time (in minutes) =1.9748904267946878
+Epoch 7/30
+train loss: 0.1272, acc: 0.9539
+time: 13.1715 seg
+test loss: 0.1700, acc: 0.9344
+time: 19.7415 seg
+
+testing Time (in minutes) =2.3039199233055117
+Epoch 8/30
+train loss: 0.1504, acc: 0.9428
+time: 13.1835 seg
+test loss: 0.1456, acc: 0.9544
+time: 19.7291 seg
+
+testing Time (in minutes) =2.6327426711718243
+Epoch 9/30
+train loss: 0.1126, acc: 0.9611
+time: 13.2084 seg
+test loss: 0.1285, acc: 0.9489
+time: 19.7620 seg
+
+testing Time (in minutes) =2.9621134837468466
+Epoch 10/30
+train loss: 0.0986, acc: 0.9678
+time: 13.2278 seg
+test loss: 0.1296, acc: 0.9511
+time: 19.7411 seg
+
+testing Time (in minutes) =3.291135044892629
+Epoch 11/30
+train loss: 0.0898, acc: 0.9689
+time: 13.2255 seg
+test loss: 0.1361, acc: 0.9467
+time: 19.7455 seg
+
+testing Time (in minutes) =3.6202306667963664
+Epoch 12/30
+train loss: 0.0893, acc: 0.9694
+time: 13.2006 seg
+test loss: 0.1260, acc: 0.9633
+time: 19.7016 seg
+
+testing Time (in minutes) =3.9485952854156494
+Epoch 13/30
+train loss: 0.1538, acc: 0.9444
+time: 13.2148 seg
+test loss: 0.1705, acc: 0.9389
+time: 19.7687 seg
+
+testing Time (in minutes) =4.278083761533101
+Epoch 14/30
+train loss: 0.0810, acc: 0.9700
+time: 13.2272 seg
+test loss: 0.1248, acc: 0.9633
+time: 19.7232 seg
+
+testing Time (in minutes) =4.6068076093991595
+Epoch 15/30
+train loss: 0.0881, acc: 0.9678
+time: 13.1824 seg
+test loss: 0.1127, acc: 0.9644
+time: 19.7653 seg
+
+testing Time (in minutes) =4.936232173442841
+Epoch 16/30
+train loss: 0.0651, acc: 0.9789
+time: 13.2577 seg
+test loss: 0.1177, acc: 0.9600
+time: 19.7485 seg
+
+testing Time (in minutes) =5.265377247333527
+Epoch 17/30
+train loss: 0.0670, acc: 0.9728
+time: 13.1727 seg
+test loss: 0.1215, acc: 0.9611
+time: 19.7352 seg
+
+testing Time (in minutes) =5.594300810496012
+Epoch 18/30
+train loss: 0.0792, acc: 0.9722
+time: 13.2312 seg
+test loss: 0.1210, acc: 0.9589
+time: 19.7475 seg
+
+testing Time (in minutes) =5.923429878552755
+Epoch 19/30
+train loss: 0.0743, acc: 0.9711
+time: 13.2137 seg
+test loss: 0.1122, acc: 0.9689
+time: 19.7211 seg
+
+testing Time (in minutes) =6.252119652430216
+Epoch 20/30
+train loss: 0.1000, acc: 0.9594
+time: 13.1789 seg
+test loss: 0.1377, acc: 0.9522
+time: 19.7609 seg
+
+testing Time (in minutes) =6.58147885799408
+Epoch 21/30
+train loss: 0.0682, acc: 0.9761
+time: 13.1831 seg
+test loss: 0.1503, acc: 0.9544
+time: 19.7463 seg
+
+testing Time (in minutes) =6.910586913426717
+Epoch 22/30
+train loss: 0.0688, acc: 0.9733
+time: 13.1507 seg
+test loss: 0.1225, acc: 0.9633
+time: 19.7278 seg
+
+testing Time (in minutes) =7.239387289683024
+Epoch 23/30
+train loss: 0.0522, acc: 0.9811
+time: 13.2643 seg
+test loss: 0.1163, acc: 0.9556
+time: 19.8032 seg
+
+testing Time (in minutes) =7.569444946448008
+Epoch 24/30
+train loss: 0.0649, acc: 0.9772
+time: 13.1381 seg
+test loss: 0.1064, acc: 0.9611
+time: 19.7153 seg
+
+testing Time (in minutes) =7.898037791252136
+Epoch 25/30
+train loss: 0.0500, acc: 0.9839
+time: 13.2138 seg
+test loss: 0.1465, acc: 0.9544
+time: 19.7569 seg
+
+testing Time (in minutes) =8.227323722839355
+Epoch 26/30
+train loss: 0.0574, acc: 0.9806
+time: 13.1951 seg
+test loss: 0.1433, acc: 0.9500
+time: 19.7495 seg
+
+testing Time (in minutes) =8.556497184435527
+Epoch 27/30
+train loss: 0.0730, acc: 0.9728
+time: 13.2538 seg
+test loss: 0.1023, acc: 0.9644
+time: 19.7691 seg
+
+testing Time (in minutes) =8.885986586411795
+Epoch 28/30
+train loss: 0.0728, acc: 0.9761
+time: 13.2503 seg
+test loss: 0.1674, acc: 0.9522
+time: 19.7594 seg
+
+testing Time (in minutes) =9.215313577651978
+Epoch 29/30
+train loss: 0.0978, acc: 0.9633
+time: 13.2387 seg
+test loss: 0.1284, acc: 0.9533
+time: 19.8956 seg
+
+testing Time (in minutes) =9.546911187966664
+Epoch 30/30
+train loss: 0.0705, acc: 0.9733
+time: 13.2538 seg
+test loss: 0.1042, acc: 0.9622
+time: 19.7623 seg
+
+testing Time (in minutes) =9.876286240418752
+Torch train
+Maximo valor de accuracy: 0.9838888888888889 Ultimo valor de accuracy: 0.9733333333333334Menor valor de loss: 0.0020831068977713585 Ultimo valor de loss: 0.0020831068977713585Torch ValMaximo valor de accuracy: 0.9688888888888889 Ultimo valor de accuracy: 0.9622222222222222Menor valor de loss: 0.10232339950071441 Ultimo valor de loss: 0.10416996964977847----------modficacion_1_transfer_learningEpocas:30----------
+Epoch 1/30
+train loss: 0.8074, acc: 0.7389
+time: 24.2715 seg

@@ -17,9 +17,9 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 classes = 6
 learning_rate = 0.001
 batch_size = 64
-num_epoch = 30
+num_epoch = 40
 
-name = "modficacion_1_transfer_learning"
+name = "modificacion_4_epocas"
 title = "Epocas:" + str(num_epoch)
 os.makedirs('./'+"modificaciones", exist_ok=True)
 

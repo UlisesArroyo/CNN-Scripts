@@ -1,4 +1,3 @@
-"""
 from torchvision import models
 model = models.resnet50()
 print(model)
@@ -24,3 +23,4 @@ import os
 
 if __name__ == "__main__":
     
+"""
