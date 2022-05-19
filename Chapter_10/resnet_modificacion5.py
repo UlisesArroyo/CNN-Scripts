@@ -15,12 +15,12 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 #Hyperparametros
 classes = 6
-learning_rate = 0.001
-batch_size = 64
-num_epoch = 20
+learning_rate = 0.0001
+batch_size = 16
+num_epoch = 10
 
-name = "modificacion_5"
-title = "Epocas: " + str(num_epoch)
+name = "modificacion_5 "
+title = " Learning Rate: " + str(learning_rate) +""
 os.makedirs('./'+"modificaciones", exist_ok=True)
 
 
@@ -55,12 +55,12 @@ image_datasets = {
 dataloaders = {
     'train':
     torch.utils.data.DataLoader(image_datasets['train'],
-                                batch_size=32,
+                                batch_size=batch_size,
                                 shuffle=True,
                                 num_workers=0),  # for Kaggle
     'test':
     torch.utils.data.DataLoader(image_datasets['test'],
-                                batch_size=32,
+                                batch_size=batch_size,
                                 shuffle=False,
                                 num_workers=0)  # for Kaggle
 }
@@ -68,8 +68,9 @@ dataloaders = {
 #Se carga el modelo
 model = models.resnet50(pretrained=True).to(device)
 #Se desabilita el aprendizaje en todas las capas
-for param in model.parameters():
-    print("param:",param)
+#print("model: ", model)
+#print("model.(layer1)", model.layer1)
+for param in model.layer1:
     param.requires_grad = False   
     
 model.fc = nn.Sequential(
@@ -78,7 +79,7 @@ model.fc = nn.Sequential(
                 nn.Linear(128, 6)).to(device)
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.fc.parameters())
+optimizer = optim.Adam(model.fc.parameters(), learning_rate)
 
 time1 = time()     
 
@@ -90,7 +91,7 @@ val_loss = []
 
 def train_model(model, criterion, optimizer, num_epochs):
     file = open("./" + "modificaciones/" + name + ".txt", "a+")
-    file.write("-"*10+ name + title + "-"*10+ "\n")
+    file.write("\n"+"-"*10+ name + title + "-"*10+ "\n")
     file.close()
     for epoch in range(num_epochs):
         file = open("./" + "modificaciones/" + name + ".txt", "a+")
