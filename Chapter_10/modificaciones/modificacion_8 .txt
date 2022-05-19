@@ -1,0 +1,220 @@
+
+----------modificacion_8  Betas: 0.9 - 0.99 ----------
+Epoch 1/10
+train loss: 0.6940, acc: 0.7550
+time: 25.0171 seg
+test loss: 0.3462, acc: 0.8711
+time: 31.6201 seg
+
+testing Time (in minutes) =0.5270077625910441
+Epoch 2/10
+train loss: 0.2937, acc: 0.8900
+time: 25.1036 seg
+test loss: 0.1826, acc: 0.9378
+time: 31.7310 seg
+
+testing Time (in minutes) =1.0558619856834413
+Epoch 3/10
+train loss: 0.2019, acc: 0.9256
+time: 25.2425 seg
+test loss: 0.1388, acc: 0.9456
+time: 31.8933 seg
+
+testing Time (in minutes) =1.5874197999636332
+Epoch 4/10
+train loss: 0.1971, acc: 0.9222
+time: 25.4029 seg
+test loss: 0.1546, acc: 0.9489
+time: 32.0654 seg
+
+testing Time (in minutes) =2.121846052010854
+Epoch 5/10
+train loss: 0.1663, acc: 0.9433
+time: 25.4640 seg
+test loss: 0.2071, acc: 0.9244
+time: 32.1545 seg
+
+testing Time (in minutes) =2.6577576398849487
+Epoch 6/10
+train loss: 0.1327, acc: 0.9539
+time: 25.5170 seg
+test loss: 0.2537, acc: 0.9144
+time: 32.1524 seg
+
+testing Time (in minutes) =3.1936351458231607
+Epoch 7/10
+train loss: 0.1764, acc: 0.9339
+time: 27.3975 seg
+test loss: 0.1303, acc: 0.9544
+time: 34.1746 seg
+
+testing Time (in minutes) =3.763215208053589
+Epoch 8/10
+train loss: 0.1650, acc: 0.9361
+time: 25.8766 seg
+test loss: 0.1187, acc: 0.9544
+time: 32.5767 seg
+
+testing Time (in minutes) =4.306163907051086
+Epoch 9/10
+train loss: 0.1523, acc: 0.9472
+time: 25.8816 seg
+test loss: 0.1250, acc: 0.9633
+time: 32.6933 seg
+
+testing Time (in minutes) =4.851054390271504
+Epoch 10/10
+train loss: 0.1243, acc: 0.9594
+time: 26.6862 seg
+test loss: 0.1436, acc: 0.9511
+time: 33.8270 seg
+
+testing Time (in minutes) =5.4148416717847185
+Torch train
+Maximo valor de accuracy: 0.9594444444444444 Ultimo valor de accuracy: 0.9594444444444444Menor valor de loss: 0.0050082337111234665 Ultimo valor de loss: 0.13328798115253448Torch ValMaximo valor de accuracy: 0.9633333333333334 Ultimo valor de accuracy: 0.9511111111111111Menor valor de loss: 0.11874613850590929 Ultimo valor de loss: 0.14359707401106991
+----------modificacion_8  Betas: 0.9 - 0.999 ----------
+Epoch 1/10
+train loss: 0.7414, acc: 0.7472
+time: 31.7433 seg
+test loss: 0.2926, acc: 0.8978
+time: 42.4311 seg
+
+testing Time (in minutes) =0.7071944793065389
+Epoch 2/10
+train loss: 0.2858, acc: 0.9122
+time: 32.2364 seg
+test loss: 0.1787, acc: 0.9300
+time: 44.0664 seg
+
+testing Time (in minutes) =1.4416389266649883
+Epoch 3/10
+train loss: 0.2045, acc: 0.9339
+time: 26.6720 seg
+test loss: 0.2231, acc: 0.9178
+time: 33.8516 seg
+
+testing Time (in minutes) =2.0058369795481363
+Epoch 4/10
+train loss: 0.1796, acc: 0.9444
+time: 26.9292 seg
+test loss: 0.1249, acc: 0.9578
+time: 33.6486 seg
+
+testing Time (in minutes) =2.5666505694389343
+Epoch 5/10
+train loss: 0.1604, acc: 0.9433
+time: 27.0655 seg
+test loss: 0.1525, acc: 0.9478
+time: 37.3608 seg
+
+testing Time (in minutes) =3.189339315891266
+Epoch 6/10
+train loss: 0.1480, acc: 0.9472
+time: 29.8502 seg
+test loss: 0.2235, acc: 0.9078
+time: 37.2819 seg
+
+testing Time (in minutes) =3.810712138811747
+Epoch 7/10
+train loss: 0.1866, acc: 0.9350
+time: 26.9111 seg
+test loss: 0.1555, acc: 0.9478
+time: 33.6033 seg
+
+testing Time (in minutes) =4.370771066347758
+Epoch 8/10
+train loss: 0.1374, acc: 0.9500
+time: 25.8494 seg
+test loss: 0.1228, acc: 0.9622
+time: 32.5668 seg
+
+testing Time (in minutes) =4.913562715053558
+Epoch 9/10
+train loss: 0.1537, acc: 0.9472
+time: 25.8232 seg
+test loss: 0.1656, acc: 0.9411
+time: 32.5741 seg
+
+testing Time (in minutes) =5.456467934449514
+Epoch 10/10
+train loss: 0.1639, acc: 0.9367
+time: 25.9514 seg
+test loss: 0.1229, acc: 0.9578
+time: 32.6584 seg
+
+testing Time (in minutes) =6.000777530670166
+Torch train
+Maximo valor de accuracy: 0.95 Ultimo valor de accuracy: 0.9366666666666666Menor valor de loss: 0.03173895180225372 Ultimo valor de loss: 0.03173895180225372Torch ValMaximo valor de accuracy: 0.9622222222222222 Ultimo valor de accuracy: 0.9577777777777777Menor valor de loss: 0.12279342422158354 Ultimo valor de loss: 0.1229236739832494
+----------modificacion_8  Betas: 0.9 - 0.9999 ----------
+Epoch 1/10
+train loss: 0.8131, acc: 0.7222
+time: 25.3779 seg
+test loss: 0.2895, acc: 0.9356
+time: 32.0725 seg
+
+testing Time (in minutes) =0.534546415011088
+Epoch 2/10
+train loss: 0.2750, acc: 0.9189
+time: 27.0836 seg
+test loss: 0.2062, acc: 0.9400
+time: 34.4822 seg
+
+testing Time (in minutes) =1.109253966808319
+Epoch 3/10
+train loss: 0.2203, acc: 0.9222
+time: 28.5057 seg
+test loss: 0.1471, acc: 0.9467
+time: 36.0937 seg
+
+testing Time (in minutes) =1.710817849636078
+Epoch 4/10
+train loss: 0.1684, acc: 0.9461
+time: 28.5416 seg
+test loss: 0.1455, acc: 0.9522
+time: 36.0770 seg
+
+testing Time (in minutes) =2.312104554971059
+Epoch 5/10
+train loss: 0.1904, acc: 0.9294
+time: 31.0995 seg
+test loss: 0.1412, acc: 0.9422
+time: 40.5539 seg
+
+testing Time (in minutes) =2.9880069931348165
+Epoch 6/10
+train loss: 0.1538, acc: 0.9494
+time: 31.1089 seg
+test loss: 0.1547, acc: 0.9544
+time: 40.5248 seg
+
+testing Time (in minutes) =3.6634265700976054
+Epoch 7/10
+train loss: 0.1239, acc: 0.9533
+time: 31.2979 seg
+test loss: 0.1399, acc: 0.9444
+time: 40.6862 seg
+
+testing Time (in minutes) =4.341534384091696
+Epoch 8/10
+train loss: 0.1593, acc: 0.9411
+time: 29.5164 seg
+test loss: 0.1698, acc: 0.9367
+time: 37.0564 seg
+
+testing Time (in minutes) =4.959144635995229
+Epoch 9/10
+train loss: 0.1327, acc: 0.9617
+time: 26.0085 seg
+test loss: 0.1516, acc: 0.9444
+time: 32.7740 seg
+
+testing Time (in minutes) =5.50538170337677
+Epoch 10/10
+train loss: 0.1425, acc: 0.9500
+time: 25.8158 seg
+test loss: 0.1211, acc: 0.9589
+time: 32.5387 seg
+
+testing Time (in minutes) =6.047705829143524
+Torch train
+Maximo valor de accuracy: 0.9616666666666667 Ultimo valor de accuracy: 0.95Menor valor de loss: 0.014183909632265568 Ultimo valor de loss: 0.3052113652229309Torch ValMaximo valor de accuracy: 0.9588888888888889 Ultimo valor de accuracy: 0.9588888888888889Menor valor de loss: 0.12113416783615119 Ultimo valor de loss: 0.12113416783615119
