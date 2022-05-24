@@ -72,3 +72,149 @@ time: 39.5591 seg
 testing Time (in minutes) =7.337048117319743
 Torch train
 Maximo valor de accuracy: 0.24444444444444444 Ultimo valor de accuracy: 0.24388888888888888Menor valor de loss: 1.6017978191375732 Ultimo valor de loss: 1.788385033607483Torch ValMaximo valor de accuracy: 0.2644444444444444 Ultimo valor de accuracy: 0.2088888888888889Menor valor de loss: 1.7466251966688369 Ultimo valor de loss: 1.768901760843065
+----------modificacion_11  Betas: 0.9 - 0.999 ----------
+Epoch 1/10
+train loss: 1.8499, acc: 0.2039
+time: 24.9583 seg
+test loss: 1.7315, acc: 0.2033
+time: 36.3136 seg
+
+testing Time (in minutes) =0.6054595589637757
+Epoch 2/10
+train loss: 1.7589, acc: 0.2261
+time: 23.4816 seg
+test loss: 1.7159, acc: 0.2167
+time: 34.8136 seg
+
+testing Time (in minutes) =1.1858949104944865
+Epoch 3/10
+train loss: 1.7298, acc: 0.2422
+time: 23.9014 seg
+test loss: 1.7543, acc: 0.2133
+time: 36.7977 seg
+
+testing Time (in minutes) =1.799398704369863
+Epoch 4/10
+train loss: 1.7335, acc: 0.2250
+time: 25.0905 seg
+test loss: 1.7088, acc: 0.2544
+time: 36.9896 seg
+
+testing Time (in minutes) =2.4162923216819765
+Epoch 5/10
+train loss: 1.7180, acc: 0.2461
+time: 24.8079 seg
+test loss: 1.7052, acc: 0.2533
+time: 36.7003 seg
+
+testing Time (in minutes) =3.028240100542704
+Epoch 6/10
+train loss: 1.7238, acc: 0.2467
+time: 24.7912 seg
+test loss: 1.7662, acc: 0.2356
+time: 36.5792 seg
+
+testing Time (in minutes) =3.6380688389142355
+Epoch 7/10
+train loss: 1.7223, acc: 0.2533
+time: 25.0435 seg
+test loss: 1.6885, acc: 0.2522
+time: 36.7117 seg
+
+testing Time (in minutes) =4.250130267937978
+Epoch 8/10
+train loss: 1.7158, acc: 0.2528
+time: 25.4781 seg
+test loss: 1.7602, acc: 0.2144
+time: 37.0225 seg
+
+testing Time (in minutes) =4.867406105995178
+Epoch 9/10
+train loss: 1.7037, acc: 0.2478
+time: 25.6703 seg
+test loss: 1.6703, acc: 0.2667
+time: 36.8410 seg
+
+testing Time (in minutes) =5.481623454888662
+Epoch 10/10
+train loss: 1.6895, acc: 0.2606
+time: 24.4389 seg
+test loss: 1.6420, acc: 0.2900
+time: 36.5115 seg
+
+testing Time (in minutes) =6.0903826038042705
+Torch train
+Maximo valor de accuracy: 0.26055555555555554 Ultimo valor de accuracy: 0.26055555555555554Menor valor de loss: 1.2124547958374023 Ultimo valor de loss: 1.5200130939483643Torch ValMaximo valor de accuracy: 0.29 Ultimo valor de accuracy: 0.29Menor valor de loss: 1.6420058186848958 Ultimo valor de loss: 1.6420058186848958
+----------modificacion_11  Betas: 0.9 - 0.9999 ----------
+Epoch 1/10
+train loss: 1.7891, acc: 0.2322
+time: 28.8894 seg
+test loss: 1.7556, acc: 0.2133
+time: 45.7744 seg
+
+testing Time (in minutes) =0.7631732225418091
+Epoch 2/10
+train loss: 1.7389, acc: 0.2311
+time: 28.8798 seg
+test loss: 1.7335, acc: 0.2311
+time: 43.6274 seg
+
+testing Time (in minutes) =1.4905560970306397
+Epoch 3/10
+train loss: 1.7344, acc: 0.2372
+time: 30.9119 seg
+test loss: 1.7292, acc: 0.2278
+time: 44.7777 seg
+
+testing Time (in minutes) =2.2373764355977377
+Epoch 4/10
+train loss: 1.7326, acc: 0.2433
+time: 28.4773 seg
+test loss: 1.7014, acc: 0.2611
+time: 42.2870 seg
+
+testing Time (in minutes) =2.942343811194102
+Epoch 5/10
+train loss: 1.7250, acc: 0.2422
+time: 27.0262 seg
+test loss: 1.7049, acc: 0.2233
+time: 40.0466 seg
+
+testing Time (in minutes) =3.609986424446106
+Epoch 6/10
+train loss: 1.7223, acc: 0.2550
+time: 26.2351 seg
+test loss: 1.7462, acc: 0.2300
+time: 40.9050 seg
+
+testing Time (in minutes) =4.292044993241628
+Epoch 7/10
+train loss: 1.7182, acc: 0.2450
+time: 25.6992 seg
+test loss: 1.6969, acc: 0.2544
+time: 38.0401 seg
+
+testing Time (in minutes) =4.926222264766693
+Epoch 8/10
+train loss: 1.7207, acc: 0.2422
+time: 25.7435 seg
+test loss: 1.7282, acc: 0.2333
+time: 38.5770 seg
+
+testing Time (in minutes) =5.569405476252238
+Epoch 9/10
+train loss: 1.7174, acc: 0.2367
+time: 25.2400 seg
+test loss: 1.7131, acc: 0.2244
+time: 36.6131 seg
+
+testing Time (in minutes) =6.179865296681722
+Epoch 10/10
+train loss: 1.7161, acc: 0.2539
+time: 31.2413 seg
+test loss: 1.6896, acc: 0.2389
+time: 43.6078 seg
+
+testing Time (in minutes) =6.90767160654068
+Torch train
+Maximo valor de accuracy: 0.255 Ultimo valor de accuracy: 0.2538888888888889Menor valor de loss: 1.583239197731018 Ultimo valor de loss: 1.6140183210372925Torch ValMaximo valor de accuracy: 0.2611111111111111 Ultimo valor de accuracy: 0.2388888888888889Menor valor de loss: 1.6895678525500828 Ultimo valor de loss: 1.6895678525500828
