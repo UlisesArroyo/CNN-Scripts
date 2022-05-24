@@ -1,0 +1,74 @@
+
+----------modificacion_11  Betas: 0.9 - 0.99 ----------
+Epoch 1/10
+train loss: 1.8781, acc: 0.1722
+time: 30.7619 seg
+test loss: 1.7843, acc: 0.0989
+time: 45.3426 seg
+
+testing Time (in minutes) =0.7558857957522075
+Epoch 2/10
+train loss: 1.7718, acc: 0.1906
+time: 25.2383 seg
+test loss: 1.7583, acc: 0.2011
+time: 49.9677 seg
+
+testing Time (in minutes) =1.5888971527417501
+Epoch 3/10
+train loss: 1.7729, acc: 0.2094
+time: 57.4749 seg
+test loss: 1.7690, acc: 0.2411
+time: 74.4103 seg
+
+testing Time (in minutes) =2.8292455792427065
+Epoch 4/10
+train loss: 1.7622, acc: 0.2372
+time: 26.8364 seg
+test loss: 1.7620, acc: 0.2256
+time: 40.2898 seg
+
+testing Time (in minutes) =3.5009416977564496
+Epoch 5/10
+train loss: 1.7557, acc: 0.2367
+time: 27.6404 seg
+test loss: 1.7605, acc: 0.2311
+time: 40.3562 seg
+
+testing Time (in minutes) =4.173754040400187
+Epoch 6/10
+train loss: 1.7568, acc: 0.2394
+time: 26.6837 seg
+test loss: 1.7561, acc: 0.2311
+time: 39.3582 seg
+
+testing Time (in minutes) =4.8300655325253805
+Epoch 7/10
+train loss: 1.7540, acc: 0.2250
+time: 25.9365 seg
+test loss: 1.7466, acc: 0.2644
+time: 39.3934 seg
+
+testing Time (in minutes) =5.486914038658142
+Epoch 8/10
+train loss: 1.7382, acc: 0.2444
+time: 24.3747 seg
+test loss: 1.7636, acc: 0.2089
+time: 35.8133 seg
+
+testing Time (in minutes) =6.0847605983416235
+Epoch 9/10
+train loss: 1.7420, acc: 0.2439
+time: 24.0831 seg
+test loss: 1.7638, acc: 0.2156
+time: 35.5547 seg
+
+testing Time (in minutes) =6.677530129750569
+Epoch 10/10
+train loss: 1.7394, acc: 0.2439
+time: 26.6034 seg
+test loss: 1.7689, acc: 0.2089
+time: 39.5591 seg
+
+testing Time (in minutes) =7.337048117319743
+Torch train
+Maximo valor de accuracy: 0.24444444444444444 Ultimo valor de accuracy: 0.24388888888888888Menor valor de loss: 1.6017978191375732 Ultimo valor de loss: 1.788385033607483Torch ValMaximo valor de accuracy: 0.2644444444444444 Ultimo valor de accuracy: 0.2088888888888889Menor valor de loss: 1.7466251966688369 Ultimo valor de loss: 1.768901760843065
